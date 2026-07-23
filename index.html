@@ -3,10 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Easy School</title>
+    <title>Quiz - Revision Hub</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/quiz.css">
 </head>
 <body>
-    egvxgrgfbdgrhfgfbgdssretse
+    <header>
+        <nav class="navbar">
+            <a href="index.html">Revision Hub</a>
+        </nav>
+    </header>
 
+    <main class="quiz-container">
+        
+        <div id="quiz-setup" class="setup-box">
+            <h1>Configuration du Quiz</h1>
+            <p>Chapitre sélectionné : <span id="chapter-name">Chargement...</span></p>
+            
+            <label for="num-questions">Nombre de questions :</label>
+            <select id="num-questions">
+                <option value="5">5 questions</option>
+                <option value="10" selected>10 questions</option>
+                <option value="15">15 questions</option>
+            </select>
+            <br><br>
+            
+            <label for="quiz-mode">Mode :</label>
+            <select id="quiz-mode">
+                <option value="entrainement">Entraînement (Explications affichées)</option>
+                <option value="examen">Examen (Chronométré, sans explications)</option>
+            </select>
+            <br><br>
+            
+            <button id="start-quiz-btn" class="btn-primary">Démarrer le Quiz</button>
+        </div>
+
+        <div id="quiz-game" class="hidden">
+            <div class="quiz-header">
+                <div id="timer-display" class="timer">Temps : 00:00</div>
+                <div id="question-counter" class="counter">Question 1/X</div>
+            </div>
+
+            <div id="question-text" class="question-text">Chargement de la question...</div>
+            
+            <div id="options-container" class="options-container"></div>
+
+            <div id="explanation-box" class="explanation-box hidden">
+                <h3>Explication :</h3>
+                <p id="explanation-text"></p>
+                <button id="next-question-btn" class="btn-primary">Question suivante</button>
+            </div>
+        </div>
+
+        <div id="quiz-results" class="results-box hidden">
+            <h1>Quiz Terminé !</h1>
+            <p>Votre score final : <span id="final-score">0</span> / <span id="total-questions">0</span></p>
+            <button onclick="window.location.href='index.html'" class="btn-primary">Retour à l'accueil</button>
+        </div>
+
+    </main>
+
+    <script src="js/storage.js"></script>
+    <script src="js/quiz.js"></script>
 </body>
 </html>
