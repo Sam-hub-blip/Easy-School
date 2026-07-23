@@ -1,1 +1,75 @@
 
+{
+  "matiere": "Analyse 2",
+  "chapitres": [
+    {
+      "id": "limites",
+      "nom": "Limites et continuité",
+      "questions": [
+        {
+          "id": 1,
+          "question": "Quelle est la limite de (sin x) / x quand x tend vers 0 ?",
+          "options": ["0", "1", "l'infini", "elle n'existe pas"],
+          "reponse": 1,
+          "explication": "C'est une limite classique démontrée par encadrement (théorème des gendarmes) : sin(x)/x tend vers 1 quand x tend vers 0."
+        },
+        {
+          "id": 2,
+          "question": "Une fonction f est continue en a si :",
+          "options": [
+            "f(a) existe seulement",
+            "la limite de f en a existe seulement",
+            "la limite de f en a est égale à f(a)",
+            "f est dérivable en a"
+          ],
+          "reponse": 2,
+          "explication": "La continuité en un point exige que la limite de la fonction en ce point existe ET soit égale à la valeur de la fonction en ce point."
+        },
+        {
+          "id": 3,
+          "question": "Quelle est la limite de 1/x quand x tend vers l'infini ?",
+          "options": ["0", "1", "l'infini", "elle n'existe pas"],
+          "reponse": 0,
+          "explication": "Plus x devient grand, plus 1/x se rapproche de 0. C'est une limite fondamentale à connaître."
+        }
+      ]
+    },
+    {
+      "id": "derivees",
+      "nom": "Dérivées",
+      "questions": [
+        {
+          "id": 1,
+          "question": "Quelle est la dérivée de f(x) = x^3 ?",
+          "options": ["x^2", "3x", "3x^2", "x^3/3"],
+          "reponse": 2,
+          "explication": "La règle de dérivation d'une puissance donne : dérivée de x^n = n·x^(n-1). Donc dérivée de x^3 = 3x^2."
+        },
+        {
+          "id": 2,
+          "question": "Quelle est la dérivée du produit f(x)·g(x) ?",
+          "options": [
+            "f'(x)·g'(x)",
+            "f'(x)·g(x) + f(x)·g'(x)",
+            "f'(x) + g'(x)",
+            "f'(x)·g(x) - f(x)·g'(x)"
+          ],
+          "reponse": 1,
+          "explication": "C'est la règle du produit (règle de Leibniz) : (fg)' = f'g + fg'."
+        },
+        {
+          "id": 3,
+          "question": "Si f'(x) > 0 sur un intervalle, que peut-on dire de f ?",
+          "options": [
+            "f est décroissante",
+            "f est croissante",
+            "f est constante",
+            "f a un maximum"
+          ],
+          "reponse": 1,
+          "explication": "Une dérivée positive sur un intervalle signifie que la fonction est strictement croissante sur cet intervalle."
+        }
+      ]
+    }
+  ]
+}
